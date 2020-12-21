@@ -35,8 +35,6 @@ def keyPressed(event):
             editor.tag_config('key', foreground='red')
 
 
-        
-
 window = tk.Tk()
 window.geometry('800x500')
 window.bind('<Key>', keyPressed)
@@ -49,7 +47,7 @@ editor = tk.Text( height=49, width=110, yscrollcommand=scrollBar.set)
 editor.place(x = 5, y = 35)
 scrollBar.config(command = editor.yview)
 
-runButton = tk.Button( text='Run', width=10, command=lambda : utility.runScript(status,editor) )
+runButton = tk.Button( text='Run', width=10, command=lambda : utility.runScript(status,editor, output) )
 runButton.place(x=5, y=2)
 
 status = tk.Label(text='Untitled.txt')
