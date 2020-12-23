@@ -8,7 +8,6 @@ keyWords = ['var', 'for', 'if', 'else', 'when', 'as', 'break', 'continue', 'clas
 
 # function that is trigerred when a key is pressed 
 def keyPressed(event):
-    global currStr
     global keyWords
     global editor
     idx = '1.0'
